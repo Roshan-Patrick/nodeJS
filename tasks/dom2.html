@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div onclick="myDiv()" id="myDiv" style="padding: 160x; background-color: aqua;">This is a para</div>
+    <button onclick="remove()">Remove</button>
+</body>
+<script>
+    function myDiv(){
+        const para = document.createElement('p');
+        para.innerHTML= "This is a new para"
+
+        document.getElementById('myDiv').appendChild(para);
+    }
+
+    function remove(){
+        document.getElementById('myDiv').removeChild('para');
+    }
+
+
+</script>
+</html>

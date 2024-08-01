@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .demoClass{
+        color: aqua;
+    }
+</style>
+<body>
+    <!-- <h2>Finding HTML element by class name</h2>
+    <p class="intro">Hello World</p>
+    <p class="intro">Demonstrates getElementsByClassName</p>
+    <p id="demo"></p> -->
+
+    <!-- <div> Div one</div>
+    <p class="into">Para one</p>
+    <div> Second div</div>
+    <p class="subheading">Para two</p>
+    <div> Another one</div> -->
+
+
+    <!-- <div>
+        <h3>H3 element</h3>
+        <p>I'm a p element, my parent is a div element</p>
+    </div>
+    <div>
+        <h3>H3 element</h3>
+        <p>I'm a p element, my parent is also a div element</p>
+    </div> -->
+
+    <h1 id="myH1">The element object</h1>
+    <button onclick="myFun()">Add Class</button>
+
+    <input type="text" id="myInput" value="Hello">
+
+
+
+
+    <script>
+        // const x = document.getElementsByClassName("intro")
+        // document.getElementById("demo").innerHTML= "First para(index) with class='into' is " + x[0].innerHTML;
+
+        // var paragraphs = document.querySelectorAll('p.into ');
+        // paragraphs.forEach((para)=>{
+        //     para.style.backgroundColor = "blue"
+        // })
+
+        //     const node =  document.querySelectorAll("div > p")
+        //     node.forEach(nodeElement =>{
+        //     nodeElement.style.background = "green";
+        //    })
+
+        function myFun(){
+            document.getElementById("myH1").setAttribute("class","demoClass");
+            document.getElementById("myInput").setAttribute("type","button");
+        }
+    </script>  
+</body>
+</html>
