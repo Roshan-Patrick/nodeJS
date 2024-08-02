@@ -62,9 +62,9 @@ app.get("/users", function (req, res) {
     res.json({
         users:ALL_USERS.filter((e)=>{
             if(e.username === username){
-                return true
-            }else{
                 return false
+            }else{
+                return true
             }
         })
     })
