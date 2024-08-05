@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div onmouseover="mover(this)" onmouseout="mout(this)">Enter you name</div>
+    <div onmousedown="moverdown(this)" onmouseup="moutup(this)">Enter you name</div>
+    <input id="fname" oninput="upperCase()" type="text">
+
+
+    <script>
+        function upperCase(){
+            const x = document.getElementById("fname");
+            x.value =x.value.toUpperCase();
+        }
+        function mover(obj){
+            obj.innerHTML = "Thank You"
+        }
+        function mout(obj){
+            obj.innerHTML = "Mouse Over Me"
+        }
+        function moverdown(obj){
+            obj.innerHTML = "Thank You";
+            obj.style.backgroundColor = "Blue"
+        }
+        function moutup(obj){
+            obj.innerHTML = "Mouse Over me"
+            obj.style.backgroundColor = "Red"
+        }
+    </script>
+</body>
+</html>

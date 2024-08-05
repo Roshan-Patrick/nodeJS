@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .visible{
+        visibility: hidden;
+    }
+</style>
+<body>
+    <div class="list">
+        <h2 class="title">Items</h2>
+        <ul class="items">
+            <li class="item">Item 1</li>
+            <li class="item">Item 2</li>
+            <li class="item">Item 3</li>
+        </ul>
+        <p>Hello World</p>
+
+       
+    </div>
+    <h2 onclick="this.innerHTML = 'Oops I did it again'">Hello there</h2>
+    <h2 onclick="changetext(this)">Hello there</h2>
+    <script>
+        const ul = document.querySelector(".items");
+        ul.parentNode.style.color = "blue";
+
+        console.log(ul.childNodes,ul.previousElementSibling);
+        console.log(ul.children[0]);
+
+       function changetext(id){
+            id.innerHTML="OOps I did it again"
+            ul.classList.toggle("visible");
+
+        }
+    </script>
+</body>
+</html>
